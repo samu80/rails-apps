@@ -1,0 +1,16 @@
+<br/><br/>
+<%= form_name %>
+<%= @user.errors.full_messages.to_sentence if @user.errors.any? %>
+<%= form_with model: @user do |form| %>
+    <br/><br/>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+    <br/><br/>
+    <%= form.label :age %>
+    <%= form.number_field :age %>
+    <br/><br/>
+    <br/><br/>
+    <%= form.submit %>
+  <% end %>
+<br/> <br/>
+  
