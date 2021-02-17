@@ -5,9 +5,17 @@
     <tr>
       <th>Name</th>
       <th>Age</th>
-       
+      <th>Birth Date</th>
+      <th>Gender</th>
+      <th>Phone</th>
+      <th>City</th>
+      <th>Today-Day</th>
+      <th>Favorite Color</th>
+      <th>Email</th>
+      <th>Github-URL</th>
+      
 
-      <th colspan="2"></th>
+      <th colspan="9"></th>
     </tr>
   </thead>
 
@@ -17,6 +25,17 @@
         <td><%= user.name %></td>
         
         <td><%= user.age %></td>
+
+        <td><%= user.birth_date %></td>
+        
+        <td><%= user.gender %></td>
+        <td><%= user.phone %></td>
+        <td><%= user.city %></td>
+        <td><%= user.day %></td>
+        <td><%= user.favorite_color %></td>
+        <td><%= user.email %></td>
+        <td><%= user.homepage %></td>
+
         <td><%= link_to "Edit User", edit_user_path(user) %></td>
 
         <td><%= button_to "Delete User", user_path(user), method: "delete", data: { confirm: "Want to delete?" } %></td>
