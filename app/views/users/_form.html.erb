@@ -9,6 +9,33 @@
     <%= form.label :age %>
     <%= form.number_field :age %>
     <br/><br/>
+    <%= form.label :city %>
+    <%= form.select :city, ["Pune", "Mumbai", "Beed"] %>
+    <br/><br/>
+    <%= form.label :birth_date %>
+    <%= form.date_field :birth_date %>
+    <br/><br/>
+    <%= form.label :gender %>
+    <%= form.radio_button :gender, "male", :checked => true %> Male
+    <%= form.radio_button :gender, "female" %> Female
+    <br/><br/>
+    <%= form.label :phone %>
+    <%= form.telephone_field :phone %>
+    <br/><br/>
+    <%= form.label :email %>
+    <%= form.email_field :email %>
+    <br/><br/>
+    <%= form.label :password %>
+    <%= form.password_field :password %>
+    <br/><br/>
+    <%= form.label :day %><br />
+    <%= form.select :day, [["Sunday", 0], ["Monday", 1], ["Tuesday", 2], ["Wednesday", 3], ["Thursday", 4], ["Friday", 5], ["Saturday", 6]] %>
+    <br/><br/>
+    <%= form.label :favorite_color %>
+    <%= form.color_field :favorite_color %>
+    <br/><br/>
+    <%= form.label :Any_URL %>
+    <%= form.url_field :homepage %>
     <br/><br/>
     <%= form.submit %>
   <% end %>
